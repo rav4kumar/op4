@@ -6,7 +6,7 @@ import cereal.messaging as messaging
 
 
 def main():
-  shutdown_at = 60 * 10
+  #shutdown_at = 60 * 10
   shutdown_count = 0
   device_state_sock = messaging.sub_sock('deviceState')
 
@@ -22,7 +22,7 @@ def main():
     if shutdown_count >= shutdown_at > 0:
       os.system('LD_LIBRARY_PATH="" svc power shutdown')
 
-    time.sleep(10)
+    time.sleep(60)
 
 
 if __name__ == "__main__":
