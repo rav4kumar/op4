@@ -245,6 +245,20 @@ static int bb_ui_draw_measure(UIState *s,  const char* bb_value, const char* bb_
   }
   return (int)((bb_valueFontSize + bb_labelFontSize)*2.5) + 5;
 }
+static void ui_draw_vision_event(UIState *s) {
+  const int viz_event_w = 220;
+  const int viz_event_x = s->viz_rect.right() - (viz_event_w + bdr_is*2);
+  const int viz_event_y = s->viz_rect.y + (bdr_is*1.5);
+  if (s->scene.controls_state.getEngageable()) {
+    // draw steering wheel
+    const int bg_wheel_size = 90; //I made the wheel a bit smaller -wirelessnet2
+    const int bg_wheel_x = viz_event_x + (viz_event_w-bg_wheel_size);
+    const int bg_wheel_y = viz_event_y + (bg_wheel_size/2);
+    const NVGcolor color = bg_colors[s->status];
+
+    ui_draw_circle_image(s, bg_wheel_x, bg_wheel_y, bg_wheel_size, "wheel", color, 1.0f, bg_wheel_y - 25);
+  }
+}
 
 static void bb_ui_draw_measures_left(UIState *s, int bb_x, int bb_y, int bb_w ) {
   const UIScene *scene = &s->scene;
