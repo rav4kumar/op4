@@ -150,7 +150,11 @@ static void update_sockets(UIState *s){
 
 static void update_state(UIState *s) {
   SubMaster &sm = *(s->sm);
-
+  if (sm.updated("carState")) {
+    auto event = sm["carState"];
+    scene.car_state = event.getCarState();
+  }
+	
   UIScene &scene = s->scene;
   if (scene.started && sm.updated("controlsState")) {
     scene.controls_state = sm["controlsState"].getControlsState();
