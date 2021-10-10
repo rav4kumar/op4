@@ -1,6 +1,12 @@
 **OpenPilot 0.8.10 Community Fork for Kia, Hyundai, and Genesis**
 ------------------
 
+**ABOUT ME**
+
+Hi, I have less than a year old in coding and i release super safe bypass eps spas steering and it drives great for me donate to me and learn more about the secret i make from copying other people's forks on github yay. 
+
+
+
 **This fork is Community Supported!**
 ------------------------
 
@@ -9,14 +15,17 @@ To get involved join us on discord or Contribute to the project with code or hel
 
 - https://discord.gg/zWSnqJ6rKD
 
-- Donating helps me dedicate more time and effort into this project. It also gives me more time to make for helping people.
+- Donating helps me dedicate more time and effort into this project that i copy. It also gives me more time to make for helping people.
 
-- https://www.patreon.com/Circuit_Pro
+- https://comma.ai/shop
 
-<a href="https://www.paypal.com/donate?business=NRFAJ6FYRLT2Y&no_recurring=0&item_name=Contribute+to+help+progress+JPR%27s+HKG+Fork&currency_code=USD" 
-target="_blank">
-<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" alt="PayPal this" 
-title="PayPal – The safer, easier way to pay online!" border="0" />
+<a href="https://comma.ai/shop" target="_blank">
+</a>
+
+I also need this keybord. So i can copy paste faster. 
+
+- https://drop.com/buy/stack-overflow-the-key-macropad
+<a href="https://drop.com/buy/stack-overflow-the-key-macropad" target="_blank">
 </a>
 
 **Please join our Discord!**
@@ -40,6 +49,8 @@ This fork has full long control for all HKG with radar harness and Harnessless f
 
 **By using this software you are responsible for anything that occurs while OpenPilot is engaged or disengaged. Be ready to take over at any moment. Fork maintainers assumes no liability for your use of this software and any hardware.**
 
+^^^^^^^^^ i just say that shit so i can keep myself out of trouble. But idc about yll. i just want more user on my fork. 
+
 ***Open Street Maps!***
 ---------------------
    - Speed limit wrong or missing? Contribute to Open Street Maps in your area! https://www.openstreetmap.org
@@ -50,13 +61,14 @@ This fork has full long control for all HKG with radar harness and Harnessless f
    - We have the correct DBC for newer Hyundais(2019+ and have built in navigation) to pull speed limit information from head unit over can bus, There is a toggle to do this `Pull Hyundai Navigation Speed Limit`. O.S.M. will use both database and car head unit input to decide speed limit.
    - https://www.youtube.com/watch?v=hTuvA6o6gjY
 
-***SPAS***
+***SPAS (what is safety??)***
 ----------
+   - best in class safety with python if and elif. 
    - Install `SPAS` for EMS366 vehicles (most Genesis, Kia Stinger, Kona).
    - Install `SPAS_EEMS11` for EV's / Hybrids.
    - Install `SPAS_EMS11` for everything else
    - SPAS currently supports EMS366 and EMS11! EMS11 NEEDS testing(!!BE CAREFUL!!), EMS366 has been stable in all of my testing but in no way does that mean trust it. At its current stage, DO NOT TRUST IT AND ALWAYS BE READY TO TAKE OVER WHEN USING SPAS!!!
-   - Sends parking assist messages up to 38mph, With safety code to do the following and more, Rate limit, Override disengage, OpenPilot Correctly! handles all 8 states of MDPS_stat. OpenPilot can understand all MDPS faults and react accordingly.
+   - Sends parking assist messages up to 38mph( which you can change.), With safety code to do the following and more, Rate limit, Override disengage, OpenPilot Correctly! handles all 8 states of MDPS_stat. OpenPilot can understand all MDPS faults and react accordingly.
    - OpenPilot disables on override.
    - Overried driver torque thresehold is 2.2 nm and is set in "carcontroller.py".
    - OpenPilot winds up and unwinds on spas enable so no jerk.
